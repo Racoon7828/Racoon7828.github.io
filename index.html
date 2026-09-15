@@ -91,6 +91,7 @@
   .hero-title{animation-delay:.08s;}
   .hero-role{animation-delay:.14s;}
   .hero-bio{animation-delay:.2s;}
+  .hero-career{animation-delay:.23s;}
   .hero-contact{animation-delay:.26s;}
   .hero-photo{animation-delay:.1s;}
   .stack-groups{animation:riseIn .6s cubic-bezier(.22,.61,.36,1) both; animation-delay:.32s;}
@@ -146,6 +147,19 @@
     margin-top:12px; color:var(--text-muted); font-size:1rem; line-height:1.65;
   }
   .hero-contact{display:flex; flex-wrap:wrap; gap:10px; margin-top:24px;}
+  .hero-career{margin-top:20px;}
+  .hero-career-label{
+    font-family:"IBM Plex Mono",monospace; font-size:0.7rem; letter-spacing:0.1em; text-transform:uppercase;
+    color:var(--text-muted); display:block; margin-bottom:8px;
+  }
+  .hero-career-item{
+    display:flex; flex-wrap:wrap; gap:10px; align-items:baseline;
+    font-size:0.92rem; color:var(--text); line-height:1.5; margin-bottom:5px;
+  }
+  .hero-career-item:last-child{margin-bottom:0;}
+  .hero-career-period{
+    font-family:"IBM Plex Mono",monospace; font-size:0.78rem; color:var(--accent-text); flex:0 0 auto; white-space:nowrap;
+  }
   .contact-chip{
     font-family:"IBM Plex Mono",monospace; font-size:0.82rem;
     padding:8px 14px; border-radius:5px; border:1px solid var(--border);
@@ -370,6 +384,21 @@
         <h1 class="hero-title">김병욱</h1>
         <p class="hero-role">AI · 데이터 · 백엔드를 넘나드는 풀사이클 빌더</p>
         <p class="hero-bio">모델 학습부터 API, 화면, 배포까지 혼자서도 끝낼 수 있습니다. 아래 8개 프로젝트 중 7개는 GitHub에 코드가 공개되어 있고, 1개는 사내 프로젝트로 개요만 소개합니다.</p>
+        <div class="hero-career" aria-label="이력">
+          <span class="hero-career-label">이력</span>
+          <div class="hero-career-item">
+            <span class="hero-career-period">2018.03 – 2024.08</span>
+            <span>대구대학교 컴퓨터공학과 졸업</span>
+          </div>
+          <div class="hero-career-item">
+            <span class="hero-career-period">2024.07 – 2025.01</span>
+            <span>보안 메신저 앱 UI/UX·백엔드 개발 외주 (Kotlin, Flutter) — 보안 특성상 코드·화면 비공개</span>
+          </div>
+          <div class="hero-career-item">
+            <span class="hero-career-period">2026.03 – 2026.09</span>
+            <span>경북대학교 KDT-14 AI·빅데이터 부트캠프 수료 (6개월 반 과정)</span>
+          </div>
+        </div>
         <div class="hero-contact">
           <a class="contact-chip" href="https://github.com/Racoon7828" target="_blank" rel="noopener">GitHub</a>
           <a class="contact-chip" href="mailto:racoon7828@naver.com">racoon7828@naver.com</a>
